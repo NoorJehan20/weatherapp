@@ -15,6 +15,7 @@ const API ={
   .then(data =>
     {
       console.log(data)
+      setresult(data)
     })
  },[])
  console.log(result)
