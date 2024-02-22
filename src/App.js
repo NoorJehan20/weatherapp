@@ -15,7 +15,7 @@ function App() {
   }, []);
 
   function ifClicked() {
-    fetch(`${API.url}?q=${locations}&appid=${API.key}`)
+    fetch(`${API.url}?q=${locations}&units=Metric&appid=${API.key}`)
       .then((res) => {
         if (res.ok) {
           console.log(res.status);
@@ -61,10 +61,10 @@ function App() {
           </button>
         </div>
         <div className="app__data">
-          <p className="box temp">Current Temperature: {weather?.main?.temp}<sup>o</sup>F</p>
+          <p className="box temp">Current Temperature: {weather?.main?.temp}<sup>o</sup>C</p>
           <p className="box humid">Humidity: {weather?.main?.humidity}%</p>
           <br/>
-          <p className="two feel">Feels Like: {weather?.main?.feels_like}<sup>o</sup>F</p>
+          <p className="two feel">Feels Like: {weather?.main?.feels_like}<sup>o</sup>C</p>
           <p className="two air">Air Pressure: {weather?.main?.pressure}</p>
         </div>
         <img className="app__image" src={photos} alt="" />
