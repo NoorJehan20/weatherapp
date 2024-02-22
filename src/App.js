@@ -56,15 +56,16 @@ function App() {
           <h1 className="app_name">Weather App</h1>
           <input type="text" value={locations} placeholder="Enter location" className="location_input"
             onChange={(e) => setLocations(e.target.value)}/>
-          <button className="location_searcher" onClick={ifClicked}>
+          <button className="location_search" onClick={ifClicked}>
             Search Location
           </button>
         </div>
         <div className="app__data">
-          <p className="temp">Current Temparature: {weather?.main?.temp} Humidity: {weather?.main?.humidity}</p>
-          <p className="temp">Feels Like: {weather?.main?.feels_like} Air Pressure: {weather?.main?.pressure}</p>
-          {/* <p className="temp">Feels Like: {weather?.main?.feels_like}</p> */}
-          {/* <p className="temp">Air Pressure: {weather?.main?.pressure}</p> */}
+          <p className="box temp">Current Temperature: {weather?.main?.temp}<sup>o</sup>F</p>
+          <p className="box humid">Humidity: {weather?.main?.humidity}%</p>
+          <br/>
+          <p className="two feel">Feels Like: {weather?.main?.feels_like}<sup>o</sup>F</p>
+          <p className="two air">Air Pressure: {weather?.main?.pressure}</p>
         </div>
         <img className="app__image" src={photos} alt="" />
       </div>
