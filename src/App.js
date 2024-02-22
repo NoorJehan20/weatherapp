@@ -61,10 +61,10 @@ function App() {
           </button>
         </div>
         <div className="app__data">
-          <p className="temp">Current Temparature: {weather?.main?.temp}</p>
-          <p className="temp">Humidity: {weather?.main?.humidity}</p>
-          <p className="temp">Feels Like: {weather?.main?.feels_like}</p>
-          <p className="temp">Air Pressure: {weather?.main?.pressure}</p>
+          <p className="temp">Current Temparature: {weather?.main?.temp} Humidity: {weather?.main?.humidity}</p>
+          <p className="temp">Feels Like: {weather?.main?.feels_like} Air Pressure: {weather?.main?.pressure}</p>
+          {/* <p className="temp">Feels Like: {weather?.main?.feels_like}</p> */}
+          {/* <p className="temp">Air Pressure: {weather?.main?.pressure}</p> */}
         </div>
         <img className="app__image" src={photos} alt="" />
       </div>
