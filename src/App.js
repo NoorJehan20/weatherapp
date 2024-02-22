@@ -36,13 +36,13 @@ function App() {
     fetch(
       `https://api.unsplash.com/search/photos?query=${locations}&client_id=Q3aDLb1PRAfc7ZE53AvgAdURhM9zYaeWpDNOzjb7vs8`
     )
-      // .then((res) => {
-      //   if (res.ok) {
-      //     return res.json();
-      //   } else {
-      //     throw new Error("You made a mistake");
-      //   }
-      // })
+      .then((res) => {
+        if (res.ok) {
+          return res.json();
+        } else {
+          throw new Error("You made a mistake");
+        }
+      })
       .then((data) => {
         console.log(data);
         setPhotos(data?.results[0]?.urls?.raw);
@@ -62,9 +62,9 @@ function App() {
         </div>
         <div className="app__data">
           <p className="temp">Current Temparature: {weather?.main?.temp}</p>
-          <p className="humid">Current Humidity: {weather?.main?.humidity}</p>
-          {/* <p className="temp">Current Temparature: {weather?.main?.temp}</p>
-          <p className="temp">Current Temparature: {weather?.main?.temp}</p> */}
+          <p className="temp">Humidity: {weather?.main?.humidity}</p>
+          <p className="temp">Feels Like: {weather?.main?.feels_like}</p>
+          <p className="temp">Air Pressure: {weather?.main?.pressure}</p>
         </div>
         <img className="app__image" src={photos} alt="" />
       </div>
