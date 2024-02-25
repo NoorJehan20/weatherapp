@@ -34,19 +34,39 @@
 
 .app_name {
   font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #333;
   font-size: 28px;
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
 }
 
-.location_search {
+/* .location_search {
   padding: 10px;
   color: white;
   background-color: #333;
   border: none;
   border-radius: 50px;
   margin-left: 16px;
+} */
+
+.location_search{
+  padding: 8px;
+  outline: none;
+  transition: all .5s ease;
+  color: #333;
+  border: 3px solid #333;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-left: 16px;
+  background-color : transparent;
+  border-radius: 50px;
 }
+
+.location_search:hover {
+  color: #fff;
+  background-color: #333;
+}
+
 .location_input {
   padding: 10px;
   margin-left: 24px;
