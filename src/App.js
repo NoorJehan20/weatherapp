@@ -4,7 +4,7 @@ import "./App.css";
 
 function App() {
   const [weather, setWeather] = useState({});
-  const [locations, setLocations] = useState("karachi");
+  const [locations, setLocations] = useState("Karachi");
   const [photos, setPhotos] = useState([]);
   const API ={
     key: "1315e207be3242acf3af559b696c94ac",
