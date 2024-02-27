@@ -22,10 +22,10 @@ function App() {
           return res.json();
         } else {
           if (res.status === 404) {
-            return alert("Oops, there seems to be an error!(wrong location)");
+            return alert("Oops, there seems to be an error(wrong location)!");
           }
           alert("Oops, there seems to be an error!");
-          throw new Error("You have an error");
+          throw new Error("Something went wrong");
         }
       })
       .then((object) => {
@@ -40,7 +40,7 @@ function App() {
         if (res.ok) {
           return res.json();
         } else {
-          throw new Error("You made a mistake");
+          throw new Error("Something went wrong!");
         }
       })
       .then((data) => {
