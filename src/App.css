@@ -65,6 +65,7 @@
   border: 1px solid rgba(255, 255, 255, 0.6);
   color: #000;
   border-radius: 50px;
+  margin-bottom: 8px;
 }
 
 .box {
@@ -82,3 +83,59 @@
   color: #2e2e2e;
   padding-left: 24px;
 }
+
+@media (max-width: 1093px) and (min-width: 1011px) {
+  .location_input{
+    width: 220px;
+  }
+} 
+
+@media (max-width: 1010px) and (min-width: 969px) {
+  .location_input{
+    width: 200px;
+  }
+  .location_search{
+    margin-right: 10px;
+  }
+} 
+
+@media (max-width: 968px) and (min-width: 909px) {
+  .location_input{
+    width: 180px;
+  }
+  .location_search{
+    margin-left: 12px;
+    margin-right: 10px;
+  }
+} 
+
+@media (max-width: 908px) and (min-width: 879px) {
+  .location_input{
+    width: 170px;
+  }
+  .location_search{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+} 
+
+@media (max-width: 878px) and (min-width: 850px) {
+  .location_input{
+    width: 160px;
+  }
+  .location_search{
+    margin-left: 8px;
+    margin-right: 10px;
+  }
+} 
+
+@media (max-width: 849px) and (min-width: 712px) {
+  .location_input{
+    width: 140px;
+  }
+  .location_search{
+    padding: 6px;
+    margin-left: 4px;
+    margin-right: 10px;
+  }
+} 
