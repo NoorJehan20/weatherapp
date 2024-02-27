@@ -6,7 +6,7 @@ function App() {
   const [weather, setWeather] = useState({});
   const [locations, setLocations] = useState("Karachi");
   const [photos, setPhotos] = useState([]);
-  const API ={
+  const API = {
     key: "1315e207be3242acf3af559b696c94ac",
     url: "https://api.openweathermap.org/data/2.5/weather"
   }
@@ -55,7 +55,7 @@ function App() {
         <div className="search">
           <h1 className="app_name">Weather App</h1>
           <input type="text" value={locations} placeholder="Enter location" className="location_input"
-            onChange={(e) => setLocations(e.target.value)}/>
+            onChange={(e) => setLocations(e.target.value)} />
           <button className="location_search" onClick={ifClicked}>
             Search Location
           </button>
@@ -63,7 +63,7 @@ function App() {
         <div className="app__data">
           <p className="box temp">Current Temperature: {weather?.main?.temp}<sup>o</sup>C</p>
           <p className="box humid">Humidity: {weather?.main?.humidity}%</p>
-          <br/>
+          <br />
           <p className="two feel">Feels Like: {weather?.main?.feels_like}<sup>o</sup>C</p>
           <p className="two air">Air Pressure: {weather?.main?.pressure}</p>
         </div>
