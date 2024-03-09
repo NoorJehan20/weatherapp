@@ -11,8 +11,8 @@ function App() {
     url: "https://api.openweathermap.org/data/2.5/weather"
   }
   useEffect(() => {
-    ifClicked();
-  }, [ifClicked]);
+    // ifClicked();
+  }, []);
 
   function ifClicked() {
     fetch(`${API.url}?q=${locations}&units=Metric&appid=${API.key}`)
