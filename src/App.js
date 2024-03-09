@@ -11,7 +11,7 @@ function App() {
     url: "https://api.openweathermap.org/data/2.5/weather"
   }
   useEffect(() => {
-    // ifClicked();
+    ifClicked();
   }, []);
 
   function ifClicked() {
