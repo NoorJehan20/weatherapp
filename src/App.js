@@ -12,7 +12,7 @@ function App() {
   }
   useEffect(() => {
     ifClicked();
-  }, []);
+  }, [ifClicked]);
 
   function ifClicked() {
     fetch(`${API.url}?q=${locations}&units=Metric&appid=${API.key}`)
